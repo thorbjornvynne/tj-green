@@ -25,5 +25,3 @@ app.include_router(account_router)
 app.include_router(detail_router)
 
 run_scheduler()
-
-app.include_router(notifications.router)
