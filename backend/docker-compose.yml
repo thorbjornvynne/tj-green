@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  backend:
+    build: .
+    container_name: tj-green-backend
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - .:/app
+    restart: unless-stopped
+
+  db:
+    image: postgres:15
+    container_name: tj-green-db
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:
