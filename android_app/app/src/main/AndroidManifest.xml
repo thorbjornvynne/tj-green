@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.stockpredictor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:label="TJ Green"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name=".ui.auth.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register other activities -->
+        <activity android:name=".ui.dashboard.DashboardActivity" />
+        <activity android:name=".ui.news.NewsActivity" />
+        <activity android:name=".ui.settings.ScheduleActivity" />
+        <activity android:name=".ui.stocks.StocksActivity" />
+        <activity android:name=".ui.stocks.StockDetailActivity" />
+        <activity android:name=".ui.stocks.StockChartActivity" />
+        <activity android:name=".ui.stocks.AccountAccuracyActivity" />
+        <activity android:name=".ui.stocks.StockAccuracyActivity" />
+
+    </application>
+</manifest>

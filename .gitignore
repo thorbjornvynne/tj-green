@@ -1,2 +1,6 @@
 .env
 .history
+android_app/.gradle
+android_app/build
+android_app/gradle/*
+android_app/
