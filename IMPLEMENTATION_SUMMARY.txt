@@ -48,3 +48,11 @@
 - Palette extraction from user-chosen image
 - Push notification system (non-FCM) for high-confidence alerts
 - Admin dashboard or analytics screen (optional)
+## ✅ NEWLY IMPLEMENTED
+
+### WebSocket Push Notifications
+- Backend WebSocket endpoint at /ws/alerts
+- ConnectionManager for handling active WebSocket clients
+- Function `send_high_confidence_alert()` to broadcast messages
+- Android WebSocket client using OkHttp
+- Displays local notifications for incoming alerts
