@@ -6,6 +6,8 @@ plugins {
 android {
     compileSdk 33
 
+    namespace 'com.example.stockpredictor'
+    
     defaultConfig {
         applicationId "com.example.stockpredictor"
         minSdk 24

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="com.example.stockpredictor"
+<manifest 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -7,7 +7,8 @@
         android:icon="@mipmap/ic_launcher"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name=".ui.auth.AuthActivity">
+        <activity android:name=".ui.auth.AuthActivity"
+        android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

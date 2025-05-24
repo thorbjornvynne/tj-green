@@ -25,7 +25,7 @@
 
         <Button
             android:id="@+id/newsButton"
-            android:text="News & Predictions"
+            android:text="News and Predictions"
             android:drawableLeft="@android:drawable/ic_menu_info_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
 
         <Button
             android:id="@+id/themesButton"
-            android:text="Themes & Appearance"
+            android:text="Themes and Appearance"
             android:drawableLeft="@android:drawable/ic_menu_gallery"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
